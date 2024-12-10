@@ -31,7 +31,7 @@ public class UserDaoImpl implements UserDao {
             statement.setObject(6, createdAt);
             return statement.executeUpdate() > 0;
         } catch (SQLException e) {
-            e.printStackTrace();
+            // log   e.printStackTrace();
             return false;
         }
     }

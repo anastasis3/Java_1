@@ -83,7 +83,7 @@
         <% } %>
     </div>
     <form action="controller" method="post">
-        <input type="hidden" name="action" value="login">
+        <input type="hidden" name="command" value="login">
         <div class="form-group">
             <input type="text" id="username" name="username" placeholder="Имя пользователя" required>
         </div>
@@ -92,7 +92,7 @@
         </div>
         <input type="submit" value="Войти">
     </form>
-    <a href="controller?action=register" class="register-link">Нет аккаунта? Зарегистрируйтесь</a>
+    <a href="controller?command=register" class="register-link">Нет аккаунта? Зарегистрируйтесь</a>
 </div>
 </body>
 </html>

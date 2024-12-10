@@ -3,7 +3,8 @@ package com.example.demo.controller.command;
 public enum CommandType {
     LOGIN(new LoginCommand()),
     LOGOUT(new LogoutCommand()),
-    DEFAULT(new DefaultCommand());
+    DEFAULT(new DefaultCommand()),
+    REGISTER(new RegisterCommand());
 
     private BaseCommand command;
 
@@ -16,6 +17,9 @@ public enum CommandType {
     }
 
     public static BaseCommand defineCommand(String commandStr) {
-        return CommandType.valueOf(commandStr.toUpperCase()).getCommand();// todo
+        if (commandStr == null) {
+            throw new IllegalArgumentException("commandStr cannot be null");
+        }
+        return CommandType.valueOf(commandStr.toUpperCase()).getCommand();
     }
 }

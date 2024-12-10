@@ -73,7 +73,7 @@
 <body>
 <div class="container">
     <h1>Регистрация</h1>
-    <form name="registerForm" method="post" action="controller" onsubmit="return validateForm()">
+    <form name="registerForm" method="post" action="controller?command=register" onsubmit="return validateForm()">
         <input type="hidden" name="action" value="register" />
 
         <div class="form-group">

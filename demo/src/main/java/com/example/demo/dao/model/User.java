@@ -22,7 +22,6 @@ public class User {
         this.createdAt = createdAt;
     }
 
-    // Геттеры
     public int getUserId() {
         return userId;
     }
@@ -51,7 +50,6 @@ public class User {
         return createdAt;
     }
 
-    // Сеттеры
     public void setUserId(int userId) {
         this.userId = userId;
     }
